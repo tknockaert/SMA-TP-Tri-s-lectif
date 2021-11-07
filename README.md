@@ -2,6 +2,6 @@
 TP sur le tri sélectif par Titouan Knockaert et Gaspard Goupy
 
 
-Pour exécuter :
-javac Main.java
-java Main
+Pour exécuter :    
+javac Main.java    
+java Main 
