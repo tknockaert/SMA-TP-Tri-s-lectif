@@ -1,3 +1,4 @@
+package Sources;
 public class Pheromone {
     public double intensity;
 

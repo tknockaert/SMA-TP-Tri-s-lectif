@@ -1,4 +1,4 @@
-
+package Sources;
 import java.util.ArrayList;
 import java.util.Random;
 public class Robot{
@@ -27,7 +27,7 @@ public class Robot{
     public int cInMemory = 0;
     private int wait = 0;
     private boolean isSniffing = false; // true si on a sentit des pheromones à la derniere perception()
-    private double chanceToSniff = 0.70; // Le robot ne va pas sentir en permanence, sinon ils deviennent tous obsédés par les objets de type C et le reste ne bouge plus
+    private double chanceToSniff = 1.0; // Permet de moduler le % de chance que le robot s'intéresse aux phéromones
     private double stopWaitingChance = 0.02;
     public boolean isActive = true;
     private int coolDown = 0;  // Temps de repos actuel
