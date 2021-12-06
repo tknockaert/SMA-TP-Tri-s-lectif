@@ -220,6 +220,27 @@ public class Grid{
         //print(output);
         return output;
     }
+    public ArrayList<Case> getVoisinsAlt(Case c){
+        ArrayList<Case> output = new ArrayList<Case>();
+        for(int k = -1; k<4; k++){ // on va aller chopper tous les voisins
+            int j =0 ;
+            int i = 0;
+            if(k%2 == 0 ){
+                if(k ==0) i = -1;
+                if(k ==2) i = 1;
+            }
+            if(k%2 == 1 ){
+                if(k ==1) j = -1;
+                if(k ==2) j = 3;
+            }
+            if( c.x+i >= 0 && c.x+i < this.x && c.y+j >= 0 && c.y+j < this.y){
+                output.add(getCase(c.x+i, c.y+j));    
+            }
+
+        }
+        //print(output);
+        return output;
+    }
 
     public void addObjetC(int nB){
         int tmpX = genererInt(0,x-1);

@@ -152,7 +152,8 @@ public class Robot{
         
     }
     public void perceptionHandFull(){
-        ArrayList<Case> voisins = grid.getVoisins(caseOn);
+        //ArrayList<Case> voisins = grid.getVoisins(caseOn);
+        ArrayList<Case> voisins = grid.getVoisinsAlt(caseOn);
         boolean hasFoundObjet = false;
         for(Case c : voisins){
                 if (c != caseOn && !c.isObjetEmpty() && !hasFoundObjet){

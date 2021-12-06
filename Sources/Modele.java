@@ -15,7 +15,7 @@ public class Modele{
     private  double kplus = 0.1;
     private  double kminus = 0.3;
     private  int memorySize = 10 ;
-    private  int nbIterations = 50000000;
+    private  int nbIterations = 100000;
     private  boolean DEBUG = false;
     private  double error = 0.0;
     private int nbC = 0;
@@ -88,7 +88,9 @@ public class Modele{
             //////////////////////////////// FIN PARTIE 2 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
             grid.updateGrid();
-            gdd.repaint();
+            if(i%100 == 0){
+                gdd.repaint();
+            }
 
             try {
                 Thread.sleep(millis);
