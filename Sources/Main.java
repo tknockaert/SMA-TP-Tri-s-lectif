@@ -19,7 +19,7 @@ public class Main{
         double kminus = 0.3; // 0.3
         int memorySize = 1 ; // 1
         int nbIterations = 100000; // 100000
-        int cooldown = 100; // 100
+        int cooldown = 0; // 100
         double errorPercent = 0.0; // 0.0
         Modele m = new Modele(width, height, nbA, nbB, nbRobot, kplus, kminus, memorySize, speed, nbIterations, cooldown);
 
